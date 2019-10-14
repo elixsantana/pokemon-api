@@ -1,0 +1,37 @@
+// ul {
+//   list-style-type: none;
+// }
+
+// .pokemon {
+//   display: flex;
+//   width: 50%;
+// }
+
+// .pokemon > div {
+//   flex: 1;
+// }
+
+// // .pokemon > div:first-child {
+// //   display: flex;
+// //   flex-direction: column;
+// // }
+
+.container {
+  height: 100vh;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+button {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.details {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.clear {
+  margin-left: 2%;
+}

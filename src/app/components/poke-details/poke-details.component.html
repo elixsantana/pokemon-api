@@ -1,0 +1,13 @@
+<button (click)="clear()" class="clear btn btn-outline-dark">
+  Clear
+</button>
+<div>
+  <ul class="display-{{ details?.height > 0 ? 'show' : 'none' }}">
+    <li>
+      <i>Height: </i>
+      {{ details?.height }}
+    </li>
+    <li><i>Weight: </i> {{ details?.weight }}</li>
+    <li><i>Base experience: </i> {{ details?.base_experience }}</li>
+  </ul>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>List of pokemons</h2>
+  <button class="btn btn-primary" (click)="getAllPokemons()">
+    Get Pokemons
+  </button>
+
+  <button class="clear btn btn-info" (click)="clearAll()">
+    Clear all
+  </button>
+
+  <div *ngFor="let poke of pokemons; index as i">
+    <div class="pokemon card">
+      <div>
+        <b>{{ poke.name }}</b>
+        <div>
+          <button
+            class="details btn btn-outline-info"
+            (click)="getPokemonDetails(poke.id)"
+          >
+            Details
+          </button>
+
+          <!-- pokemon Details-->
+          <poke-details [details]="poke.details"></poke-details>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
